@@ -40,3 +40,11 @@ int sumСhetEl(int[] arr)
     }            
     return sum;
 }
+void PrintArr(int[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write($"{arr[i]}" + "|");
+    }
+    Console.WriteLine();
+}
