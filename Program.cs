@@ -29,3 +29,14 @@ void FillArray(int[] arr)
         arr[i] = rnd.Next(0, 100);
     }
 }
+//Функция суммы элементов четных позиций массива
+int sumСhetEl(int[] arr)
+{
+    int sum = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (i % 2 == 0)
+            sum=sum+arr[i];
+    }            
+    return sum;
+}
