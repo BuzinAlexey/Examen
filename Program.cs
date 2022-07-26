@@ -19,3 +19,13 @@ PrintArr(array);
 //Подсчет суммы элементов на четных позициях
 int Chet = sumСhetEl(array);
 Console.WriteLine($"сумма элементов четных позиций массива равна = {Chet}");
+
+//Функция заполнения массива случайными числами
+void FillArray(int[] arr)
+{
+    Random rnd = new Random();
+    for (int i = 0; i < arr.Length; i++)
+    {
+        arr[i] = rnd.Next(0, 100);
+    }
+}
